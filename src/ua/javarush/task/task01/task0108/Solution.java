@@ -9,15 +9,15 @@ public class Solution {
         int a = 3;
         int b = 2;
 
-        System.out.print("два");
+//        System.out.print("два");
         System.out.print(b);
         System.out.print(" плюс ");
-        System.out.print(" мінус ");
+//        System.out.print(" мінус ");
         System.out.print(a);
-        System.out.print("три");
+//        System.out.print("три");
         System.out.print(" дорівнює ");
-        System.out.print(" буде ");
-        System.out.print("п'яти");
+//        System.out.print(" буде ");
+//        System.out.print("п'яти");
         System.out.print(a + b);
     }
 }
