@@ -10,6 +10,9 @@ public class Solution {
         int six = 6;
 
         //напишіть тут ваш код
+        six++;
+        six++;
+        six++;
 
 
         System.out.println(six);
