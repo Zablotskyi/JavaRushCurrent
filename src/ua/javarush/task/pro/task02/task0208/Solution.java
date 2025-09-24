@@ -9,7 +9,7 @@ public class Solution {
     public static void main(String[] args) {
         String emptiness = "порожнеча";
 
-        String fullness = ""; //напишіть тут ваш код
+        String fullness = emptiness + " " + emptiness + " " + emptiness; //напишіть тут ваш код
 
         System.out.println(fullness);
     }
