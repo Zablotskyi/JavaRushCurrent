@@ -11,7 +11,7 @@ public class Solution {
         int y = 4;
         int z = 0;
 
-        String digits = ""; //напишіть тут ваш код
+        String digits = x + y + "" + z; //напишіть тут ваш код
 
         System.out.println(digits);
     }
