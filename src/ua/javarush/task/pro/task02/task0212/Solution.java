@@ -11,8 +11,8 @@ public class Solution {
         String usa = "сша";
 
         //напишіть тут ваш код
-        System.out.println(usa);
-        System.out.println("Вінні-Пух");
-        System.out.println(caps + "they know I mean business");
+        System.out.println(usa.toUpperCase());
+        System.out.println("Вінні-Пух".toUpperCase());
+        System.out.println(caps.toUpperCase() + "they know I mean business".toUpperCase());
     }
 }
