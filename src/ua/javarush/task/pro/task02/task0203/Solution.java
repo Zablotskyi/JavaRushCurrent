@@ -9,7 +9,7 @@ public class Solution {
     public static void main(String[] args) {
         int number = 546;
 
-        int lastDigit; //напишіть тут ваш код
+        int lastDigit = number % 10; //напишіть тут ваш код
 
         System.out.println(lastDigit);
     }
