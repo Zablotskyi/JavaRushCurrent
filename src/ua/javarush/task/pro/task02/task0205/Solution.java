@@ -10,7 +10,15 @@ public class Solution {
         int toothCounter = 32;
 
         //напишіть тут ваш код
-
+        toothCounter--;
+        toothCounter--;
+        toothCounter--;
+        toothCounter--;
+        toothCounter--;
+        toothCounter--;
+        toothCounter--;
+        toothCounter--;
+        toothCounter--;
 
         System.out.println(toothCounter);
     }
