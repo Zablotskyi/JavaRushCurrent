@@ -10,7 +10,7 @@ public class Solution {
         String bigAmount = "500";
         String greatAmount = "100000";
 
-        int hugeAmount = 0; //напишіть тут ваш код
+        int hugeAmount = Integer.parseInt(greatAmount) + Integer.parseInt(bigAmount); //напишіть тут ваш код
 
         System.out.println(hugeAmount);
     }
