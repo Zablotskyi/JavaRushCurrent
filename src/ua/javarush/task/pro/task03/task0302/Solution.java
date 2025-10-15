@@ -10,5 +10,14 @@ public class Solution {
     public static void main(String[] args) {
         String militaryCommissar = ", з'явіться до військкомату";
         //напишіть тут ваш код
+        Scanner scanner = new Scanner(System.in);
+        String name = scanner.nextLine();
+        int age = scanner.nextInt();
+
+        if (age >= 18 && age <= 26) {
+            System.out.println(name + ", з'явіться до військкомату");
+        }
+
+        scanner.close();
     }
 }
