@@ -14,9 +14,11 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
         double bodyTemperature = scanner.nextDouble();
         //напишіть тут ваш код
-        if (bodyTemperature > 37) {
+        isHigh = bodyTemperature > 37;
+        isLow = bodyTemperature < 36;
+        if (isHigh) {
             System.out.println("температура тіла висока");
-        } else if (bodyTemperature < 36){
+        } else if (isLow){
             System.out.println("температура тіла низька");
         } else {
             System.out.println("температура тіла нормальна");
