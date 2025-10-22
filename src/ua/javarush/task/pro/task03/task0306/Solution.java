@@ -12,5 +12,16 @@ public class Solution {
 
     public static void main(String[] args) {
         //напишіть тут ваш код
+        Scanner scanner = new Scanner(System.in);
+        int firsSideTriangle = scanner.nextInt();
+        int secondSideTriangle = scanner.nextInt();
+        int thirdSideTriangle = scanner.nextInt();
+
+        if (firsSideTriangle < secondSideTriangle + thirdSideTriangle &&
+                secondSideTriangle < firsSideTriangle + thirdSideTriangle &&
+                thirdSideTriangle < firsSideTriangle + secondSideTriangle)
+            System.out.println("трикутник існує");
+        else
+            System.out.println("трикутник не існує");
     }
 }
