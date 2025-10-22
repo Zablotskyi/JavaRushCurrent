@@ -20,8 +20,8 @@ public class Solution {
         if (firsSideTriangle < secondSideTriangle + thirdSideTriangle &&
                 secondSideTriangle < firsSideTriangle + thirdSideTriangle &&
                 thirdSideTriangle < firsSideTriangle + secondSideTriangle)
-            System.out.println("трикутник існує");
+            System.out.println(TRIANGLE_EXISTS);
         else
-            System.out.println("трикутник не існує");
+            System.out.println(TRIANGLE_NOT_EXISTS);
     }
 }
