@@ -10,7 +10,21 @@ public class Solution {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        String result = number < 5 ? "число менше за 5" : number > 5 ? "число більше за 5" : "число дорівнює 5";
-        System.out.println(result);
+/*        String result = number < 5 ? "число менше за 5" : number > 5 ? "число більше за 5" : "число дорівнює 5";
+        System.out.println(result);*/
+        String result;
+
+        if (number < 5) {
+            result = "число менше за 5";
+            System.out.println(result);
+        }
+        if (number > 5) {
+            result = "число більше за 5";
+            System.out.println(result);
+        }
+        if (number == 5) {
+            result = "число дорівнює 5";
+            System.out.println(result);
+        }
     }
 }
