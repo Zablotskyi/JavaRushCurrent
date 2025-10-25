@@ -9,8 +9,14 @@ import java.util.Scanner;
 public class Solution {
     public static void main(String[] args) {
         //напишіть тут ваш код
-        System.out.println("числа рівні");
-        //напишіть тут ваш код
-        System.out.println("числа не рівні");
+        Scanner scanner = new Scanner(System.in);
+        double firstNumber = scanner.nextDouble();
+        double secondNumber = scanner.nextDouble();
+
+        if (Math.abs(secondNumber - firstNumber) < 0.000001)
+            System.out.println("числа рівні");
+            //напишіть тут ваш код
+        else
+            System.out.println("числа не рівні");
     }
 }
