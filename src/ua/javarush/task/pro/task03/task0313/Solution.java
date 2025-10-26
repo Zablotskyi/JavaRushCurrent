@@ -9,7 +9,17 @@ public class Solution {
         String same = "посилання на рядки однакові";
         String different = "посилання на рядки різні";
         //напишіть тут ваш код
+        if (string1 == string2)
         System.out.println(same);
+        else
         System.out.println(different);
+        if (string2 == string3)
+            System.out.println(same);
+        else
+            System.out.println(different);
+        if (string1 == string3)
+            System.out.println(same);
+        else
+            System.out.println(different);
     }
 }
