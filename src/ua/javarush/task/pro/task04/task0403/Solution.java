@@ -10,14 +10,21 @@ public class Solution {
     public static void main(String[] args) {
         //напишіть тут ваш код
         Scanner scanner = new Scanner(System.in);
-        String s = "";
-        int number = 0;
 
-        s = scanner.nextLine();
-        while (!s.equals("ENTER")) {
-            number = number + Integer.parseInt(s);
-            s = scanner.nextLine();
+        int sum = 0;
+        boolean isExit = false;
+
+        while (!isExit) {
+            if (scanner.hasNextInt()) {
+                int number = scanner.nextInt();
+                sum = sum + number;
+            } else if (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                if (line.equals("ENTER")) {
+                    isExit = true;
+                }
+            }
         }
-        System.out.println(number);
+        System.out.println(sum);
     }
 }
