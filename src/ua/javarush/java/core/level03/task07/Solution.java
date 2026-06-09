@@ -15,18 +15,18 @@ public class Solution {
         String code = console.nextLine().trim();
 
         // Вкладена логіка: спочатку перевіряємо вік, потім код
-        if (/* умова */) {
+        if (age >= 21) {
             // Вік підходить — перевіряємо тип запрошення
-            if (/* умова */) {
-
-            } else if (/* умова */) {
-
+            if (code.equals("VIP")) {
+                System.out.println("Доступ до VIP-залу дозволено.");
+            } else if (code.equals("GUEST")) {
+                System.out.println("Гостьовий доступ дозволено.");
             } else {
-
+                System.out.println("Невірний код запрошення.");
             }
         } else {
             // Вік менший за 21 — доступ заборонено
-
+            System.out.println("На жаль, лише з 21 року.");
         }
     }
 }
