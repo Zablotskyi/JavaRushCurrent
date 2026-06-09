@@ -17,17 +17,17 @@ public class Solution {
         String hasClubCard = console.nextLine().trim().toLowerCase();
 
         // Перевіряємо умови для визначення знижки
-        if (/* умова */) {
+        if (age >= 65) {
             // Якщо вік 65 або більше, надаємо знижку 20%
-
+            System.out.println("Твоя знижка: 20%.");
         } else {
             // Якщо вік менший за 65, перевіряємо наявність клубної картки
-            if (/* умова */) {
+            if (hasClubCard.equals("так")) {
                 // Якщо є клубна картка, надаємо знижку 10%
-
+                System.out.println("Твоя знижка: 10%.");
             } else {
                 // В усіх інших випадках знижки немає
-
+                System.out.println("Знижки немає.");
             }
         }
     }
