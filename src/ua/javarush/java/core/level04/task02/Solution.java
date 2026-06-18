@@ -9,11 +9,12 @@ public class Solution {
         String input = ""; // зберігатимемо введений користувачем текст
 
         // Запитуємо пароль, доки користувач не введе точне слово "java"
-        while (/* умова */) {
-
+        while (!input.equals("java")) {
+            System.out.println("Введіть пароль: ");
+            input = console.nextLine();
         }
 
         // Повідомлення після успішного введення
-
+        System.out.println("Смартфон розблоковано!");
     }
 }
