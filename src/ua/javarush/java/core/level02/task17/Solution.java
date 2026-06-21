@@ -9,10 +9,12 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);
 
         // Зчитуємо один рядок як пароль
+        System.out.println("Введіть пароль");
         String pass = scanner.nextLine();
 
 
         // Виводимо введений пароль на екран
+        System.out.println("Ви ввели");
         System.out.println(pass);
     }
 }
