@@ -18,14 +18,18 @@ public class Solution {
 
         // Перевіряємо дільники від 2 до sqrt(n).
         // Умова i <= n / i еквівалентна i*i <= n, але без ризику переповнення int.
-        for (/* ініціалізація */; /* умова */; /* зміна */) {
-            if (/* умова */) { // Знайшли дільник — число складене
-
+        for (int i = 2; i < secretKeyCandidate; i++) {
+            if (secretKeyCandidate % i == 0) { // Знайшли дільник — число складене
+                isPrime = false;
                 break;
             }
         }
 
         // Виводимо результат перевірки
-
+        if (isPrime) {
+            System.out.println("YES");
+        } else if (!isPrime){
+            System.out.println("NO");
+        }
     }
 }
