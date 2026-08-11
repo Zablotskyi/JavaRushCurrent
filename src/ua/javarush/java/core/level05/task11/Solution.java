@@ -11,7 +11,15 @@ public class Solution {
 
         // Гра з духом
         while (true) {
-
+            int answer = console.nextInt();
+            if (answer < secret)
+                System.out.println("Більше!");
+            else if (answer > secret)
+                System.out.println("Менше!");
+            else if (answer == secret) {
+                System.out.println("Вірно!");
+                return;
+            }
         }
     }
 }
