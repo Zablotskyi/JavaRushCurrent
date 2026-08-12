@@ -20,21 +20,29 @@ public class Solution {
             int takePlayer;
             while (true) {
                 System.out.print("Скільки камінців візьмеш (1-" + maxTake + "): ");
+                takePlayer = sc.nextInt();
+                if (takePlayer >= 1 && takePlayer <= 10 && takePlayer <= stones) {
+                    takePlayer = Math.min(10, takePlayer);
+                } else {
+                    continue;
+                }
+                stones -= takePlayer;
 
+                System.out.println("Гравець взяв " + takePlayer + ". Залишилося: " + stones);
+                if (stones == 0) {
+                    System.out.println("Гравець переміг!");
+                    break;
+                }
 
-                
-            }
+                // Хід комп’ютера: беремо випадково, але не більше залишку
+                int takeBot = Math.min(stones, rand.nextInt(10) + 1);
+                stones -= takeBot;
 
-            System.out.println("Гравець взяв " + takePlayer + ". Залишилося: " + stones);
-
-
-            // Хід комп’ютера: беремо випадково, але не більше залишку
-            int takeBot = Math.min(stones, rand.nextInt(10) + 1);
-
-            System.out.println("Комп’ютер взяв " + takeBot + ". Залишилося: " + stones);
-            if (stones == 0) {
-                System.out.println("Комп’ютер переміг!");
-                break;
+                System.out.println("Комп’ютер взяв " + takeBot + ". Залишилося: " + stones);
+                if (stones == 0) {
+                    System.out.println("Комп’ютер переміг!");
+                    break;
+                }
             }
         }
     }
