@@ -20,19 +20,35 @@ public class Solution {
         // Основний бойовий цикл
         while (true) {
             // Хід лицаря: промах, якщо перевищує прихований максимум
-
+            System.out.println("Задайте силу удару лицаря:");
+            int knightMax = console.nextInt();
 
             // Перевіряємо смерть дракона
+            if (knightMax <= dragonMax) {
+                if (knightMax >= 1 && knightMax <= 20) {
+                    dragonHp -= knightMax;
+                }
+            }
 
+            if (dragonHp <= 0) {
+                System.out.println("Лицар переміг!");
+                return;
+            }
 
             // Хід дракона: перша голова атакує
-
+            int firstDragonMax = rand.nextInt(10) + 1;
 
             // Хід дракона: друга голова атакує
+            int secondDragonMax = rand.nextInt(10) + 1;
 
-            
             // Поточний стан і перевірка смерті лицаря
+            knightHp -= firstDragonMax + secondDragonMax;
+            System.out.println("Життів лицаря: " + knightHp + " Життів дракона: " + dragonHp);
 
+            if (knightHp <= 0) {
+                System.out.println("Дракон переміг!");
+                return;
+            }
         }
     }
 }
