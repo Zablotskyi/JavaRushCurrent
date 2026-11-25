@@ -4,7 +4,7 @@ public class ShapeDesigner {
 
     // Статичний метод, який виводить характеристики прямокутника
     public static void printRectangleSpecs(int rectangleWidth, int rectangleHeight) {
-        
+        System.out.println("Характеристики прямокутника: ширина = " + rectangleWidth + ", висота = " + rectangleHeight);
     }
 
     public static void main(String[] args) {
