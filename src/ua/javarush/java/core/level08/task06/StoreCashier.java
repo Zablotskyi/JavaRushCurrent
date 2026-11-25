@@ -5,7 +5,7 @@ public class StoreCashier {
     // Статичний метод, який приймає ціни двох товарів,
     // підсумовує їх і виводить результат
     public static void calculateAndShowCost(int firstItemPrice, int secondItemPrice) {
-
+        System.out.println("Загальна вартість купівлі: " + (firstItemPrice + secondItemPrice));
     }
 
     public static void main(String[] args) {
