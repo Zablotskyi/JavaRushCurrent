@@ -4,7 +4,7 @@ public class PersonalGreeter {
     // Статичний метод для привітання нового користувача
     public static void welcomeNewUser(String userName) {
         // Формуємо рядок привітання і виводимо його на екран
-        
+        System.out.println("Вітаємо тебе, " + userName);
     }
 
     public static void main(String[] args) {
