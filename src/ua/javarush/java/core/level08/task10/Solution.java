@@ -4,7 +4,7 @@ public class Solution {
     // Метод перевіряє, чи ділиться число на 2 без остачі
     public static boolean checkIfEven(int inputNumber) {
         // Оператор % повертає остачу від ділення
-
+        return inputNumber % 2 == 0;
     }
 
     public static void main(String[] args) {
