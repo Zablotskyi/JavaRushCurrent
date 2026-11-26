@@ -4,10 +4,13 @@ public class Solution {
 
     // Метод із поверненим значенням int: приймає масив оцінок і повертає їхню суму
     public static int calculateTotalGrades(int[] studentExamResults) {
-
+        int sum = 0;
         // Проходимо всі елементи масиву та накопичуємо суму
-
+        for (int item : studentExamResults) {
+            sum += item;
+        }
         // Повертаємо підсумкову суму
+        return sum;
     }
 
     public static void main(String[] args) {
