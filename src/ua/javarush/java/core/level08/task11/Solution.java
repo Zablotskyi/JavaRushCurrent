@@ -5,7 +5,7 @@ public class Solution {
     // Метод getHigherScore приймає два цілих числа і повертає більше з них
     public static int getHigherScore(int playerOneScore, int playerTwoScore) {
         // Використовуємо умовний оператор для порівняння двох чисел
-
+        return (playerOneScore > playerTwoScore ? playerOneScore : playerTwoScore);
     }
 
     public static void main(String[] args) {
