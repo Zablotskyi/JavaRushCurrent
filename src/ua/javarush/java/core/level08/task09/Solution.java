@@ -5,7 +5,7 @@ public class Solution {
     // Метод для створення персоналізованого привітання
     public static String generateGreetingMessage(String recipientName) {
         // Формуємо рядок привітання з використанням переданого імені
-        
+        return "Привіт, " + recipientName + "!";
     }
 
     public static void main(String[] args) {
