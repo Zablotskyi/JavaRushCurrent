@@ -25,9 +25,9 @@ public class Solution {
     // Метод attemptToEnchantContainer намагається змінити магічне значення і замінити об’єкт
     public static void attemptToEnchantContainer(MagicalContainer container) {
         // Змінюємо значення magicValue переданого об’єкта на 99
-
-
+        container.magicValue = 99;
         // Намагаємося замінити об’єкт на новий із magicValue, що дорівнює 42
-
+        container = new MagicalContainer();
+        container.magicValue = 42;
     }
 }
