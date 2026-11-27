@@ -10,7 +10,7 @@ public class Solution {
         myPrivateAccount.depositMoney(1000);
 
         // Спроба прямого доступу до приватного поля ззовні класу:
-        myPrivateAccount.accountBalance = 2000;
+        /*myPrivateAccount.accountBalance = 2000;*/
     }
 }
 
