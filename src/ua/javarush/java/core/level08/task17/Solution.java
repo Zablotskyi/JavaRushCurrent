@@ -13,4 +13,3 @@ public class Solution {
     }
 }
 
-// Клас VillageResident із публічним полем residentName
