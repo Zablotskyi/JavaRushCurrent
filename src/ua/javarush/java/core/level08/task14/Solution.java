@@ -15,7 +15,7 @@ public class Solution {
     }
 
     public static void tryToSwapBonusList(int[] playerCurrentBonuses) {
-
+        playerCurrentBonuses = new int[]{10, 20, 30};
 
     }
 }
