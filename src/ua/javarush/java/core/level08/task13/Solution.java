@@ -5,7 +5,7 @@ public class Solution {
     // Метод для скидання початкової точки траєкторії робота
     public static void resetRobotStart(int[] trajectoryPath) {
         // Встановлюємо перший елемент масиву рівним 0
-        
+        trajectoryPath[0] = 0;
     }
 
     public static void main(String[] args) {
