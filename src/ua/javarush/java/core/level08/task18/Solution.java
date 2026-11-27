@@ -4,13 +4,13 @@ package ua.javarush.java.core.level08.task18;
 public class Solution {
     public static void main(String[] args) {
         // Створюємо об’єкт класу CustomerBankAccount з іменем myPrivateAccount
-
+        CustomerBankAccount myPrivateAccount = new CustomerBankAccount();
 
         // Поповнюємо баланс лише через публічний метод
-
+        myPrivateAccount.depositMoney(1000);
 
         // Спроба прямого доступу до приватного поля ззовні класу:
-        
+        myPrivateAccount.accountBalance = 2000;
     }
 }
 
